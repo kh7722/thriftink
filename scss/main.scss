@@ -1,6 +1,78 @@
 $primary: #ff988e;
 $secondary: #91f8d7;
 $primary-font: DM Serif Display;
+$beige: #fff5e0;
+
+/*Global Styling*/
+h1 {
+  font-family: $primary-font !important;
+}
+
+h2 {
+  font-family: $primary-font !important;
+  font-size: 50px !important;
+}
+
+p {
+  font-size: 18px;
+}
+
+.btn {
+  font-family: $primary-font !important;
+  font-size: 25px !important;
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+}
+
+.btn-primary {
+  background-color: $primary !important;
+}
+
+.btn-secondary {
+  background-color: $secondary !important;
+}
+
+ul {
+  list-style: none;
+  margin: 0 0 20px 0;
+  padding: 0 0 0 0;
+  text-align: left;
+  position: relative;
+}
+
+li {
+  margin: 0 0 0 0;
+  position: relative;
+  padding: 8px 0 8px 45px;
+  text-align: left;
+  min-height: 40px;
+  line-height: 27px;
+  color: #fff;
+}
+
+li::before {
+  content: "\f058";
+  display: inline-block;
+  font-size: 28px;
+  font-family: "FontAwesome";
+  font-weight: 900;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  height: 100%;
+  line-height: 40px;
+}
+
+.fa-li {
+  width: 22em !important;
+}
+
+.bg-beige {
+  background-color: $beige;
+}
 
 /* Start Nav Styling */
 .nav-logo {
@@ -15,7 +87,7 @@ $primary-font: DM Serif Display;
   margin-top: -10px;
   min-height: 200px;
   color: #fff;
-  font-family: DM Serif Display;
+  font-family: $primary-font;
   font-size: 70px;
   display: block;
 }
@@ -27,7 +99,7 @@ $primary-font: DM Serif Display;
   margin-top: 100px !important;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
-  margin-left: -40px;
+  margin-left: -41px;
 }
 
 .topnav {
@@ -40,7 +112,7 @@ $primary-font: DM Serif Display;
   padding: 14px 27px;
   text-decoration: none;
   font-size: 30px;
-  font-family: $primary-font
+  font-family: $primary-font;
 }
 
 .topnav a:hover {
@@ -56,7 +128,9 @@ $primary-font: DM Serif Display;
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child) {
+    display: none;
+  }
   .topnav a.icon {
     float: right;
     display: block;
@@ -64,7 +138,9 @@ $primary-font: DM Serif Display;
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
@@ -85,22 +161,229 @@ $primary-font: DM Serif Display;
   background-image: url(/images/jumbo.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 650px;
+  height: 1250px;
+  background-position: bottom center;
 }
 
+.jumbo-content {
+  float: right;
+  margin-top: 100px;
+  margin-left: 100px;
+}
 
+.jumbo-content {
+  p {
+    font-family: $primary-font;
+    font-size: 45px;
+    margin-top: 30px;
+    margin-bottom: 55px;
+  }
 
+  .heading {
+    font-family: $primary-font;
+    font-size: 90px;
+    line-height: 115px;
+  }
+}
 /* End Jumbo Styling */
+
+/* Start Arch Styling */
+.arch {
+  background-color: #fff5e0;
+  height: 450px;
+  width: 100%;
+  margin-top: -300px;
+  border-top-left-radius: 60%;
+  border-top-right-radius: 60%;
+}
+/* End Arch Styling */
+
+/* Start Content Block 1 Styling */
+
+.content-block-one {
+  .bg-beige {
+    background-color: #fff5e0;
+    z-index: 999;
+    margin-top: -375px;
+    padding-bottom: 100px;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+  }
+
+  p {
+    font-family: $primary-font;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 175px;
+  }
+
+  .row {
+    margin-right: calc(0 * var(--bs-gutter-x)) !important;
+    flex-wrap: unset !important;
+    justify-content: center;
+  }
+
+  .col-md-4 {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .pink-bg {
+    height: 500px;
+    width: 500px;
+    background-color: #ffc6b7;
+    margin: 0px auto;
+    border-radius: 50px;
+  }
+
+  .shirt-model-one img {
+    margin-top: -81px;
+  }
+
+  .shirt-model-two img {
+    margin-top: -109px;
+  }
+
+  .shirt-model-three img {
+    margin-top: -50px;
+    margin-bottom: 40px;
+  }
+
+  .shirt-model-one p {
+    margin-bottom: 350px;
+  }
+}
+
+/* End Content Block 1 Styling */
+
+/* Start Content Block 2 Styling */
+
+.content-block-2 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  .row {
+    flex-wrap: unset !important;
+    justify-content: center;
+    margin-top: 90px !important;
+  }
+
+  .col-md-3 {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+/* End Content Block 2 Styling */
+
+/* Start Content Block 3 Styling */
+
+.content-block-three {
+  .container {
+    max-width: 100% !important;
+  }
+
+  .col {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    background-color: #ff988e;
+  }
+
+  .content-split {
+    padding: 200px;
+  }
+
+  .img-split {
+    background-image: url(/images/bike-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1043px;
+    margin-top: -117px;
+  }
+
+  p {
+    max-width: 700px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+/* End Content Block 3 Styling */
+
+/* Start Content Block 4 Styling */
+
+.content-block-4 {
+  background-image: url(/images/shelf-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  img {
+    box-shadow: 20px 20px 50px grey;
+    border-radius: 15px;
+  }
+
+  .card {
+    background-color: $beige;
+    padding: 40px;
+    border: none;
+    min-height: 472px;
+    justify-content: center;
+    box-shadow: 20px 20px 50px grey;
+    border-radius: 15px;
+  }
+
+  p {
+    font-family: $primary-font;
+    font-size: 27px;
+  }
+
+  i {
+    font-family: "FontAwesome";
+    font-style: normal !important;
+    font-size: 40px;
+    margin-right: 20px;
+    color: $primary;
+  }
+
+  .fa-envelope {
+    font-size: 30px !important;
+  }
+
+  .fa-mobile-phone {
+    font-size: 60px !important;
+  }
+}
+
+/* End Content Block 4 Styling */
 
 /* Start Footer Styling */
 
+.footer {
+  border-bottom: 20px solid $beige;
+
+  i {
+    font-family: "FontAwesome";
+    font-style: normal !important;
+    font-size: 60px;
+    color: #000;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  p {
+    font-weight: 600;
+    font-family: $primary-font;
+    font-size: 20px;
+  }
+}
+
 .footer-menu a {
-color: #000;
-font-family: $primary-font;
-text-decoration: none;
-margin-left: 15px;
-margin-right: 15px;
-font-size: 22px;
+  color: #000;
+  font-family: $primary-font;
+  text-decoration: none;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 22px;
 }
 
 .footer-menu a:hover {
@@ -111,6 +394,157 @@ font-size: 22px;
   color: #027853;
 }
 
+.social-icons a {
+  text-decoration: none;
+}
+
 /* End Footer Styling */
 
-@import '../node_modules/bootstrap/scss/bootstrap.scss'
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+/* Mobile Styling */
+
+@media (max-width: 991px) {
+  .nav-logo {
+    font-size: 40px;
+  }
+
+  .topnav a {
+    font-size: 20px;
+  }
+
+  .logo-block {
+    width: 275px !important;
+    margin-top: 100px !important;
+    margin-left: 0px;
+  }
+
+  .jumbo {
+    background-image: url(/images/jumbo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    background-position: bottom center;
+    background-position-x: -50px;
+    margin-top: -75px;
+    margin-bottom: 75px;
+
+    .jumbo-content {
+      margin-left: 0px;
+      text-align: center;
+      background-color: rgba(255, 152, 142, 0.8);
+      float: none;
+      padding: 20px;
+      color: #fff;
+      border-radius: 15px;
+
+      .heading {
+        font-family: DM Serif Display;
+        font-size: 40px;
+        line-height: 50px;
+        text-shadow: 2px 2px 7px #6d251d;
+      }
+
+      p {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 7px #6d251d;
+      }
+    }
+
+    .btn-primary {
+      background-color: $secondary !important;
+    }
+
+    .content-block-2 .row {
+      flex-wrap: wrap !important;
+    }
+  }
+
+  .jumbo-content {
+    p {
+      font-family: $primary-font;
+      font-size: 45px;
+      margin-top: 30px;
+      margin-bottom: 55px;
+    }
+
+    .heading {
+      font-family: $primary-font;
+      font-size: 90px;
+      line-height: 115px;
+    }
+  }
+
+  .content-block-one {
+    .bg-beige {
+      border-top-left-radius: 18%;
+      border-top-right-radius: 18%;
+    }
+
+    .col-md-4 {
+      flex: 0 0 100% !important;
+      width: 100% !important;
+    }
+
+    .row {
+      flex-wrap: wrap !important;
+    }
+
+    p {
+      margin-top: 0px;
+    }
+
+    .shirt-model-two {
+      padding-top: 200px;
+    }
+
+    .shirt-model-three {
+      padding-top: 150px;
+    }
+  }
+
+  .content-block-2 {
+    .row {
+      flex-wrap: wrap !important;
+    }
+    .col-md-3 {
+      flex: 0 0 100% !important;
+      width: 100% !important;
+      margin-left: 50px !important;
+      margin-right: 50px !important;
+      margin-top: 30px !important;
+      margin-bottom: 30px !important;
+    }
+  }
+
+  .content-block-three {
+    .row {
+      display: block;
+    }
+
+    h2 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+    ul {
+      max-width: 300px;
+      margin: 0px auto;
+    }
+
+    .img-split {
+      height: 890px;
+      background-position-x: -100px;
+    }
+  }
+
+  .content-block-4 {
+    .col-md-6 {
+      flex: 0 0 auto;
+      width: 100%;
+    }
+  }
+}
