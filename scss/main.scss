@@ -1,6 +1,6 @@
-$primary: #ff988e;
-$secondary: #91f8d7;
-$primary-font: DM Serif Display;
+$primary: #ff75b8;
+$secondary: #91a6f8;
+$primary-font: Poppins;
 $beige: #fff5e0;
 
 /*Global Styling*/
@@ -75,39 +75,12 @@ li::before {
 }
 
 /* Start Nav Styling */
-.nav-logo {
-  background-color: #ff988e;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 15px;
-  padding-bottom: 25px;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: -100px;
-  margin-top: -10px;
-  min-height: 200px;
-  color: #fff;
-  font-family: $primary-font;
-  font-size: 70px;
-  display: block;
-}
-
-.logo-block {
-  background-color: #ff988e;
-  width: 382px !important;
-  height: 40px;
-  margin-top: 100px !important;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  margin-left: -41px;
-}
-
 .topnav {
   overflow: hidden;
 }
 
 .topnav a {
-  color: #000;
+  color: #fff;
   text-align: center;
   padding: 14px 27px;
   text-decoration: none;
@@ -116,11 +89,11 @@ li::before {
 }
 
 .topnav a:hover {
-  color: #027853;
+  color: #2e4394;
 }
 
 .topnav a.active {
-  color: #027853;
+  color: #2e4394;
 }
 
 .topnav .icon {
@@ -158,7 +131,7 @@ li::before {
 /* Start Jumbo Styling */
 
 .jumbo {
-  background-image: url(/images/jumbo.png);
+  background-image: url(/images/background-pattern.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 1250px;
@@ -167,7 +140,7 @@ li::before {
 
 .jumbo-content {
   float: right;
-  margin-top: 100px;
+  margin-top: 250px;
   margin-left: 100px;
 }
 
@@ -183,20 +156,11 @@ li::before {
     font-family: $primary-font;
     font-size: 90px;
     line-height: 115px;
+    margin-top: 50px;
   }
 }
 /* End Jumbo Styling */
 
-/* Start Arch Styling */
-.arch {
-  background-color: #fff5e0;
-  height: 450px;
-  width: 100%;
-  margin-top: -300px;
-  border-top-left-radius: 60%;
-  border-top-right-radius: 60%;
-}
-/* End Arch Styling */
 
 /* Start Content Block 1 Styling */
 
@@ -206,8 +170,6 @@ li::before {
     z-index: 999;
     margin-top: -375px;
     padding-bottom: 100px;
-    border-top-left-radius: 30%;
-    border-top-right-radius: 30%;
   }
 
   p {
