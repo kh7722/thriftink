@@ -28,10 +28,22 @@ p {
 
 .btn-primary {
   background-color: $primary !important;
+  border: 0px !important;
+
+  &:hover {
+    background-color: $secondary !important;
+    border: 0px !important;
+  }
 }
 
 .btn-secondary {
   background-color: $secondary !important;
+  border: 0px !important;
+
+  &:hover {
+    background-color: $primary !important;
+    border: 0px !important;
+  }
 }
 
 ul {
@@ -100,7 +112,8 @@ li::before {
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
   margin-left: -41px;
-  box-shadow: 0px 10px 8px 0px rgba(0,0,0,.1), 0 10px 20px 0 rgba(0,0,0,.1);
+  box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.1),
+    0 10px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 .topnav {
@@ -176,22 +189,22 @@ li::before {
 .jumbo-content {
   p {
     font-family: $primary-font;
-    font-size: 45px;
+    font-size: 40px;
     margin-top: 30px;
     margin-bottom: 30px;
   }
 
   .heading {
     font-family: $primary-font;
-    font-size: 70px;
-    line-height: 90px;
+    font-size: 60px;
+    line-height: 70px;
   }
 }
 /* End Jumbo Styling */
 
 /* Start Arch Styling */
 .arch {
-  background-color: #fff5e0;
+  background-color: $beige;
   height: 450px;
   width: 100%;
   margin-top: -300px;
@@ -292,15 +305,16 @@ li::before {
   }
 
   .content-split {
-    padding: 200px;
+    padding: 100px;
   }
 
   .img-split {
     background-image: url(https://kh7722.github.io/thriftink/images/bike-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 1043px;
-    margin-top: -117px;
+    height: 800px;
+    margin-top: -90px;
+    background-position-x: -150px;
   }
 
   p {
