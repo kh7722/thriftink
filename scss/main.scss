@@ -290,7 +290,9 @@ li::before {
 
 /* Start Content Block 2 Styling */
 
-.content-block-2 {
+
+
+.content-block-two {
   padding-top: 80px;
   padding-bottom: 80px;
 
@@ -345,7 +347,7 @@ li::before {
 
 /* Start Content Block 4 Styling */
 
-.content-block-4 {
+.content-block-four {
   background-image: url(https://kh7722.github.io/thriftink/images/shelf-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -436,6 +438,105 @@ li::before {
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 /* Mobile Styling */
+@media (max-width:1600px) {
+  .content-block-one {
+    .col-md-4 {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+  .pink-bg {
+    width: 350px;
+    height: 400px
+}
+
+.bg-beige {
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
+  padding-bottom: 50px;
+}
+
+.shirt-model-one img {
+  margin-top: -133px;
+  max-width: 400px;
+}
+
+.shirt-model-two img {
+  margin-top: -125px;
+  max-width: 300px;
+}
+
+.shirt-model-three img {
+  margin-top: -133px;
+  max-width: 300px;
+}
+  }
+
+.content-block-two .col-md-3 {
+  margin-left: 10px;
+  margin-right: 10px;
+
+  img {
+    max-width: 300px;
+  }
+}
+
+.content-block-three .img-split {
+  height: 804px;
+}
+}
+
+@media (max-width:1400px) {
+  
+  .topnav a {
+    font-size: 25px;
+}
+
+.logo-block {
+  width: 382px !important;
+  margin-left: -34px;
+}
+
+  .content-block-two .col-md-3 img {
+    max-width: 100%;
+}
+
+.content-block-three .img-split {
+  height: 690px;
+}
+
+.content-block-three {
+.img-split {
+  height: 690px;
+  margin-top: 50px;
+}
+}
+
+.content-block-four {
+  img {
+  width: 100%;
+}
+
+p {
+  font-family: DM Serif Display;
+  font-size: 22px;
+}
+
+.card {
+  min-height: 430px;
+}
+}
+
+
+}
+
+@media (max-width:1200px) {
+  .content-block-two .row {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+}
 
 @media (max-width: 991px) {
   .nav-logo {
@@ -490,7 +591,7 @@ li::before {
       background-color: $secondary !important;
     }
 
-    .content-block-2 .row {
+    .content-block-two .row {
       flex-wrap: wrap !important;
     }
   }
@@ -538,7 +639,7 @@ li::before {
     }
   }
 
-  .content-block-2 {
+  .content-block-two {
     .row {
       flex-wrap: wrap !important;
     }
@@ -574,7 +675,7 @@ li::before {
     }
   }
 
-  .content-block-4 {
+  .content-block-four {
     .col-md-6 {
       flex: 0 0 auto;
       width: 100%;
