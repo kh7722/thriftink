@@ -16,45 +16,19 @@ https://www.youtube.com/watch?v=DjkwjL0DuZY
 </head>
 <body>
 
-
-
-  <div class="mobile-container">
-
-    <!-- Top Navigation Menu -->
-    <div class="topnav">
-      <a href="#home" class="active">Logo</a>
-      <div id="myLinks">
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-      </div>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-    
-    <div style="padding-left:16px">
-      <h3>Vertical Mobile Navbar</h3>
-      <p>This example demonstrates how a navigation menu on a mobile/smart phone could look like.</p>
-      <p>Click on the hamburger menu (three bars) in the top right corner, to toggle the menu.</p>
-    </div>
-    
-    <!-- End smartphone / tablet look -->
-    </div>
-
-
 <!-- Start Navbar -->
+<!--
 <div class="container fixed-top">
   <div class="row justify-content-center">
     <div class="logo-block"></div>
   </div>
 </div>
 
-<div class="topnav fixed-top bg-secondary justify-content-center navbar" id="myTopnav">
-    <div class="nav-logo">thrift ink</div>
-    <div id="myLinks">
-  <a href="#home">shop</a>
+<div class="topnav" id="myTopnav">
+  <div class="fixed-top bg-secondary nav justify-content-center">
+  <a href="/test.html">shop</a>
   <a href="#news">our story</a>
+<div class="nav-logo">thrift ink</div>
   <a href="#contact">members</a>
   <a href="#about">contact</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -62,7 +36,59 @@ https://www.youtube.com/watch?v=DjkwjL0DuZY
   </a>
 </div>
 </div>
-<!-- End Navbar -->
+ End Navbar -->
+
+
+ <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+
+  <div class="container-fluid">
+  <!-- Toggle button -->
+  <button
+  class="navbar-toggler"
+  type="button"
+  data-mdb-toggle="collapse"
+  data-mdb-target="#navbarSupportedContent"
+  aria-controls="navbarSupportedContent"
+  aria-expanded="false"
+  aria-label="Toggle navigation"
+  >
+  <i class="fa-solid fa-mobile-phone"></i>
+  </button>
+  
+  <!-- Collapsible wrapper -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Navbar brand -->
+      <a class="navbar-brand mt-2 mt-lg-0" href="#">
+        <div class="nav-logo">thrift ink</div>
+      </a>
+  <!-- Links -->
+  <ul class="navbar-nav mb-2 mb-lg-0">
+  <li class="nav-item">
+    <a class="nav-link" href="#">shop</a>
+  </li>
+  <li class="nav-item">
+  <a class="nav-link" href="#">our story</a>
+  </li>
+  <li class="nav-item">
+  <a class="nav-link" href="#">members</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">clearance</a>
+    </li>
+  <li class="nav-item">
+  <a class="nav-link" href="#">contact</a>
+  </li>
+  </ul>
+  <!-- Links -->
+  </div>
+  <!-- Collapsible wrapper -->
+  <!-- Right elements -->
+  </div>
+  <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+
 
 <!-- Start Jumbo -->
 <div class="jumbo">
@@ -198,7 +224,7 @@ https://www.youtube.com/watch?v=DjkwjL0DuZY
 <div class="footer bg-secondary p-5 d-flex">
   <div class="container text-center">
     <div class="footer-menu">
-<a href="#">shop</a>
+<a href="/test.html">shop</a>
 <a href="#">our story</a>
 <a href="#">members</a>
 <a href="#">contact</a>
@@ -220,10 +246,8 @@ https://www.youtube.com/watch?v=DjkwjL0DuZY
 <!-- End Footer -->
 
 
-
-
-
 <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 <script src="/js/custom.js"></script>
+<script type="text/javascript" src="/js/mdb.min.js"></script>
 </body>
 </html>
