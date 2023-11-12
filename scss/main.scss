@@ -6,6 +6,8 @@ $beige: #fff5e0;
 /*Global Styling*/
 h1 {
   font-family: $primary-font !important;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 h2 {
@@ -98,7 +100,10 @@ li::before {
   background-color: $beige;
 }
 
-
+i {
+  font-family: "FontAwesome";
+  font-style: normal !important;
+}
 
 
 /* Start Nav Styling */
@@ -108,6 +113,7 @@ li::before {
   position: fixed !important;
   width: 100%;
   top: 0;
+  z-index: 999 !important;
 }
 
 .nav-item::before {
@@ -153,6 +159,10 @@ li::before {
   justify-content: center;
 }
 
+
+.mobile-navbar-brand {
+  display: none;
+}
 /* End Navbar Fixes */
 
 /* Start Jumbo Styling */
@@ -563,7 +573,7 @@ p {
 }
 
 .jumbo {
-  margin-top: 75px;
+  margin-top: 50px;
   background-position-x: -350px;
 }
 
@@ -661,27 +671,60 @@ li {
   .navbar-brand {
     margin-top: 0px !important;
   }
+
+  .jumbo {
+    margin-top: 30px;
+  }
 }
 
 @media (max-width: 991px) {
-  .nav-logo {
-    background-color: none;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    min-height: auto;
-    color: #fff;
-    font-family: DM Serif Display;
-    font-size: 20px;
-    display: block;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
+
+  .navbar-collapse collapse .mobile-navbar-brand .mobile-nav-logo {
+    display: block !important;
   }
+
+  .navbar-collapse collapse show .mobile-navbar-brand .mobile-nav-logo {
+    margin-top: -20px !important;
+  }
+
+  .mobile-navbar-brand {
+    display: block;
+    margin: 0px auto;
+    margin-top: -40px !important;
+    text-decoration: none !important;
+  }
+  
+  .mobile-nav-logo {
+    color: #000;
+    font-family: DS serif;
+    font-weight: 900;
+    font-size: 40px;
+  }
+
+  .mobile-nav-logo .collapse:not(.show) {
+    display: none !important;
+}
+
+  .navbar-nav {
+    background-color: #91f8d7;
+    margin-top: -25px;
+    padding-bottom: 20px;
+    padding-top: 7px;
+}
+
+  .nav-logo {
+    background-color: unset;
+    padding: 0px 0 0px 35px;
+    margin-left: 25px;
+    margin-bottom: -20px;
+    margin-top: 0px !important;
+    color: #000;
+    font-size: 20px;
+}
+
+  .navbar-nav a {
+    padding: 0px 27px;
+}
 
   .topnav a {
     margin-top: 0px;
@@ -695,20 +738,18 @@ li {
     top: 0;
   }
 
-  
-  .nav-logo {
-    font-size: 40px;
-  }
-
   .topnav a {
     font-size: 20px;
   }
 
-  .logo-block {
-    width: 275px !important;
-    margin-top: 100px !important;
-    margin-left: 0px;
+  .navbar-toggler {
+    border: 0px;
+    margin-top: 10px;
   }
+
+  .nav-logo {
+    display: none;
+}
 
   .jumbo {
     height: 600px;
@@ -741,15 +782,21 @@ li {
       .btn-outline {
         border: 1px solid #fff !important;
       }
+      
+      .btn-primary {
+        background-color: #fff !important;
+      }
+
+      .btn-outline {
+        background-color: #fff !important;
+      }
     }
   }
   
-
-
   .content-block-one {
     .bg-beige {
-      border-top-left-radius: 10%;
-      border-top-right-radius: 10%;
+      border-top-left-radius: 0%;
+      border-top-right-radius: 0%;
       margin-top: -200px;
     }
 
@@ -766,16 +813,18 @@ li {
       margin-top: 0px;
     }
 
+    .shirt-model-one {
+      margin-top: 0px !important;
+  }
+
     .shirt-model-two {
-      padding-top: 200px;
+      padding-top: 180px;
     }
 
     .shirt-model-three {
-      padding-top: 150px;
+      padding-top: 200px;
     }
   }
-
-
 
   .content-block-two {
     .row {
@@ -791,9 +840,8 @@ li {
     }
   }
 
-
-
   .content-block-three {
+
     .row {
       display: block;
     }
@@ -801,21 +849,23 @@ li {
     h2 {
       text-align: center;
     }
+
     p {
       text-align: center;
     }
+
     ul {
       max-width: 300px;
       margin: 0px auto;
     }
 
     .img-split {
-      height: 890px;
-      background-position-x: -100px;
+      height: 450px;
+      background-position-x: 0px;
+      margin-top: -40px;
+      margin-bottom: 0px;
     }
   }
-
-
 
   .content-block-four {
     .col-md-6 {
@@ -823,6 +873,105 @@ li {
       width: 100%;
     }
   }
+}
 
+@media (max-width:767px) {
+.content-block-three ul {
+  max-width: 100%;
+}
+
+  .fa-li {
+    width: auto !important;
+}
+
+.jumbo {
+  margin-bottom: 80px;
+}
+
+.jumbo-content {
+  .btn {
+  min-width: 240px;
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+}
+}
+
+.content-block-four {
+  .row {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .fa-solid {
+    display: block;
+    margin: 0px auto !important;
+    text-align: center !important;
+    max-height: 70px;
+}
+
+.fa-envelope {
+  margin-top: 10px !important;
+}
+  }
+
+  .footer-menu a {
+    display: block;
+  }
+}
+
+@media (max-width:480px) {
+  .jumbo {
+  height: 620px;
+  background-position-x: -50px;
+  padding-top: 10px;
+  margin-bottom: 0px;
+
+.jumbo-content {
+  max-width: 300px;
+  margin: 0px auto;
+  margin-top: 70px !important;
+
+  .heading {
+    font-size: 27px;
+    line-height: 30px;
+    text-shadow: 2px 2px 7px #6d251d;
+  }
+
+  p {
+    font-size: 16px;
+}
+
+.btn {
+  font-size: 20px !important;
+}
+}
+}
+
+.content-block-two {
+.mt-5 {
+  margin-top: 15px !important;
+}
+
+.col-md-3 img {
+  max-width: 200px !important;
+}
+}
+
+.content-block-three .content-split {
+  padding: 50px;
+}
+
+.content-block-three .img-split {
+  height: 270px;
+}
+
+.footer i {
+  font-size: 40px;
+}
 
 }
