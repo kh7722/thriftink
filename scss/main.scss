@@ -953,7 +953,7 @@ li::before {
 @media (max-width: 480px) {
   .jumbo {
     height: 620px;
-    background-position-x: -50px;
+    background-position-x: -300px;
     padding-top: 10px;
     margin-bottom: 0px;
 
@@ -978,6 +978,17 @@ li::before {
     }
   }
 
+  .content-block-one
+  {
+    h1 {
+      font-size: 24px !important;
+  }
+
+     p {
+    font-size: 20px;
+}
+  }
+
   .content-block-two {
     .mt-5 {
       margin-top: 15px !important;
@@ -997,6 +1008,11 @@ li::before {
   .img-split {
     height: 270px;
   }
+}
+
+.content-block-four .row {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
   .footer i {
