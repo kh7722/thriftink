@@ -672,16 +672,13 @@ i {
 @media (max-width: 991px) {
   .navbar {
     position: relative !important;
+    --bs-navbar-toggler-border-color: rgba(0, 0, 0, 0) !important;
+    --bs-navbar-toggler-border-radius: 0rem !important;
+    --bs-navbar-toggler-focus-width: 0rem !important;
   }
 
   .nav-item {
     padding-left: 0px !important;
-}
-
-  .navbar {
-    --bs-navbar-toggler-border-color: rgba(0, 0, 0, 0) !important;
-    --bs-navbar-toggler-border-radius: 0rem !important;
-    --bs-navbar-toggler-focus-width: 0rem !important;
 }
 
   .navbar-collapse collapse .mobile-navbar-brand .mobile-nav-logo {
@@ -830,6 +827,11 @@ i {
     .shirt-model-three {
       padding-top: 200px;
     }
+
+    .content-block-one .shirt-models .pink-bg:hover {
+      transform: none !important;
+      transition: none !important;
+  }
   }
 
   .content-block-two {
@@ -882,11 +884,12 @@ i {
 
 @media (max-width: 767px) {
   .content-block-three ul {
-    max-width: 100%;
+    max-width: 350px;
   }
 
   .fa-li {
     width: auto !important;
+    left: 0px !important;
   }
 
   .jumbo {
@@ -929,6 +932,24 @@ i {
   }
 }
 
+@media (max-width:535px) {
+  .content-block-three {
+   ul {
+    max-width: 300px;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+li {
+  text-align: left;
+}
+
+li::before {
+  left: -25px;
+}
+  }
+}
+
 @media (max-width: 480px) {
   .jumbo {
     height: 620px;
@@ -967,13 +988,16 @@ i {
     }
   }
 
-  .content-block-three .content-split {
+  .content-block-three {
+  
+  .content-split {
     padding: 50px;
   }
 
-  .content-block-three .img-split {
+  .img-split {
     height: 270px;
   }
+}
 
   .footer i {
     font-size: 40px;
