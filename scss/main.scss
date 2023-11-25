@@ -113,6 +113,7 @@ i {
   width: 100%;
   top: 0;
   z-index: 999 !important;
+  box-shadow: 0px 1px 10px 1px #7ed2b7;
 }
 
 .nav-item::before {
@@ -124,7 +125,6 @@ i {
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 25px;
-  padding-bottom: 15px;
   margin-left: 50px;
   margin-right: 50px;
   margin-bottom: -50px;
@@ -136,6 +136,7 @@ i {
   display: block;
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
+  box-shadow: 0px 1px 10px 1px #a66963;
 }
 
 .navbar-nav a {
@@ -143,7 +144,7 @@ i {
   text-align: center;
   padding: 14px 27px;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 25px;
   font-family: $primary-font;
   float: left;
   display: block;
@@ -334,6 +335,7 @@ i {
   background-image: url(https://kh7722.github.io/thriftink/images/shelf-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom: -5px;
 
   img {
     box-shadow: 20px 20px 50px grey;
@@ -952,7 +954,7 @@ li::before {
 
 @media (max-width: 480px) {
   .jumbo {
-    height: 620px;
+    height: 580px;
     background-position-x: -300px;
     padding-top: 10px;
     margin-bottom: 0px;
@@ -960,7 +962,7 @@ li::before {
     .jumbo-content {
       max-width: 300px;
       margin: 0px auto;
-      margin-top: 70px !important;
+      margin-top: 40px !important;
 
       .heading {
         font-size: 27px;
@@ -986,6 +988,11 @@ li::before {
 
      p {
     font-size: 20px;
+    margin-top: 12px;
+}
+
+.shirt-model-three p {
+  margin-top: 0px;
 }
   }
 
