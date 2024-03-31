@@ -3,6 +3,7 @@ $secondary: #91f8d7;
 $primary-font: DM Serif Display;
 $beige: #fff5e0;
 
+
 /*Global Styling*/
 h1 {
   font-family: $primary-font !important;
@@ -279,6 +280,13 @@ i {
 .content-block-two {
   padding-top: 80px;
   padding-bottom: 80px;
+
+  i {
+    font-family: "FontAwesome";
+    font-style: normal !important;
+    font-size: 35px;
+    color: $primary;
+  }
 
   .row {
     flex-wrap: unset !important;
